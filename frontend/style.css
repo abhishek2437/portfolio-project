@@ -1,0 +1,216 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f172a; /* blackish blue */
+    color: #e2e8f0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #0b1120;
+    border-bottom: 3px solid #2563eb;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3b82f6;
+}
+
+/* ===== HOME SECTION ===== */
+.home {
+    padding: 100px 8%;
+    border-bottom: 4px solid #0e2155;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* LEFT TEXT */
+.home-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-text h1 {
+    font-size: 50px;
+    color: #d3d61a;
+}
+
+.home-text h2 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.home-text p {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 10px 22px;
+    border: 2px solid #3b82f6;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #3b82f6;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* RIGHT IMAGE */
+.home-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+}
+
+.home-image img {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    object-position: 50% 10%; /* shows more top (face + hair) */
+    border-radius: 50%;
+    border: 6px solid #080403;
+    box-shadow: 0 0 40px rgba(59,130,246,0.5);
+}
+
+/* ===== CERTIFICATES ===== */
+.certificates {
+    padding: 100px 8%;
+    border-bottom: 4px solid #1e3a8a;
+}
+
+.certificates h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+    color: #3b82f6;
+}
+
+.cert-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.cert-card {
+    background: #1e293b;
+    padding: 30px;
+    width: 260px;
+    border-radius: 12px;
+    border: 3px solid #3b82f6;
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px);
+    background: #3b82f6;
+    color: white;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    padding: 100px 8%;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3b82f6;
+}
+
+.contact form {
+    max-width: 420px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin: 12px 0;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #3b82f6;
+    background: #0f172a;
+    color: white;
+}
+
+.contact button {
+    padding: 14px;
+    background: #3b82f6;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #1e40af;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b1120;
+    border-top: 3px solid #2563eb;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-image img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 30px;
+    }
+}
